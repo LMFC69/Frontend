@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>Login</title>
+<!--
+
+
+
+
+
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+
+    <link rel="stylesheet" href="../css/templatemo-lava.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../css/style-login.css">
+	
+	</head>
+<body>
+	<div class="logo2"><img class="logo2" src="../images/Header5.jpg"> <br></div>
+	
+	<header class="header-area1 header-sticky" text-align="center">
+		
+        <div class="container">
+            <div class="row">
+				
+                <div class="col-12 col-xl-5">
+                    <nav class="main-nav1">
+                        <!-- ***** Logo Start ***** -->
+						
+                        <a href="index.html" class="logo" >
+                       
+                    </a>
+                        <!-- ***** Logo End ***** -->
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+	
+	<div class="left-image-decor"></div>
+		<div class="right-image-decor"></div>
+	
+	
+	<div class="align"> 
+		
+		
+		<a href="../../index.html"> <img class="logo" src="../images/App_Icon.png"></a>
+  <div class="card">
+    <div class="head">
+      <div></div>
+      <a id="login" class="selected" href="#login">Login</a> <a id="register" href="#register">Registrieren</a>
+      <div></div>
+    </div>
+    <div class="tabs">
+      <form name="login" method="post">
+        <div class="inputs">
+          <div class="input">
+            <input placeholder="Benutzername" type="text" name="userid" required>
+            <img src="../images/user.svg"> </div>
+          <div class="input">
+            <input placeholder="Passwort" type="password" name="pswrd" required>
+            <img src="../images/pass.svg"> </div>
+          <label class="checkbox">
+            <input type="checkbox">
+            <span>Logindaten merken</span> </label> <br>
+			        </div>
+        <button onclick="check(this.form)" value="Login" type="submit">Login </button>
+		  <a href="test" color="#000000">Passwort vergessen?</a>
+      </form>
+      <form method="post">
+        <div class="inputs">
+          <div class="input">
+            <input placeholder="Email" type="email" required>
+            <img src="../images/mail.svg"> </div>
+          <div class="input">
+            <input placeholder="Benutzername" min="4"  type="text" name="userid" required>
+            <img src="../images/user.svg"> </div>
+          <div class="input">
+            <input placeholder="Passwort" type="password" name="pswrd" required>
+            <img src="../images/pass.svg"> </div>
+          <div class="input">
+            <input placeholder="Passwort wiederholen" type="password" required>
+            <img src="../images/pass.svg"> </div>
+        </div>
+        <button onclick="set(this.form)" value="Reg">Registrieren</button>
+		 <p>test</p>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+<script src="../js/jquery-3.3.1.min.js"></script> 
+<script src="../js/login2.js"></script> 
+<script src="../js/login.js"></script>
+</body>
+</html>
