@@ -2,6 +2,8 @@
 <html>
 <head>
 <title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 <!--
 
 
@@ -16,6 +18,8 @@
 <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
 <link rel="stylesheet" href="../css/templatemo-lava.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+<link rel="stylesheet" href="../css/loginreg.css">
+<script src="../js/loginreg.js"></script>
 </head>
 <body>
 <header class="header-area header-sticky">
@@ -47,21 +51,82 @@
     </div>
   </div>
 </header>
-	<div class="left-image-decor"></div>
+
+<!-- ***** Header Area End ***** -->
+
+<div class="container2">
+  <div class="container1">
+    <form class="form" id="Login">
+      <h1 class="form__title">Einloggen</h1>
+      <div class="form__message form__message--error"></div>
+      <div class="form__input-group">
+        <input type="text" name="LoginUser" class="form__input" autofocus placeholder="E-Mail">
+        <div class="form__input-error-message"></div>
+      </div>
+      <div class="form__input-group">
+        <input type="password" name="LoginPasswort" class="form__input" autofocus placeholder="Passwort">
+        <div class="form__input-error-message"></div>
+      </div>
+      <div>
+        <button class="form__button" onclick="check(this.form)" type="submit">Einloggen</button>
+        <button class="form__button2" id="linkCreateAccount" >Registrieren</button>
+      </div>
+    </form>
+    <form class="form form--hidden" id="CreateAccount">
+      <h1 class="form__title">Registrieren</h1>
+      <div class="form__message form__message--error"></div>
+      <div class="form__input-group">
+        <input type="text" id="Vorname" class="form__input class__username" autofocus placeholder="Vorname">
+        <div class="form__input-error-message"></div>
+      </div>
+      <div class="form__input-group">
+        <input type="text" id="Nachname" class="form__input class__username" autofocus placeholder="Nachname">
+        <div class="form__input-error-message"></div>
+      </div>
+      <div class="form__input-group">
+        <input type="text" class="form__input class__email" autofocus placeholder="E-Mail Adresse">
+        <div class="form__input-error-message"></div>
+      </div>
+		<div class="test">
+      <div class="form__input-group">
+        <input type="text" id="Straße" class="form__input2 class__email" autofocus placeholder="Straße">
+        <div class="form__input-error-message"></div>
+      </div>
+      <div class="form__input-group">
+        <input type="text" id="HausNr" class="form__input3 class__email" autofocus placeholder="Nr.">
+        <div class="form__input-error-message"></div>
+      </div>
+			</div>
+		<div class="test">
+      <div class="form__input-group">
+        <input type="text" id="Stadt" class="form__input1 class__email" autofocus placeholder="Stadt" >
+        <div class="form__input-error-message"></div>
+      </div>
+      <div class="form__input-group">
+        <input type="text" id="PLZ" class="form__input1 class__email" autofocus placeholder="PLZ">
+        <div class="form__input-error-message"></div>
+      </div>
+			</div>
+		
+      <div class="form__input-group">
+        <input type="password" id="SignUpPasswort" class="form__input form__passwort" autofocus placeholder="Passwort">
+        <div class="form__input-error-message"></div>
+      </div>
+      <div class="form__input-group">
+        <input type="password" id="SignUpBestätigen" class="form__input form__bestätigen" autofocus placeholder="Passwort bestätigen">
+        <div class="form__input-error-message"></div>
+      </div>
+      <button class="form__button"  type="submit">Registrieren</button>
+      <button class="form__button2" id="linkLogin" >Einloggen</button>
+    </form>
+  </div>
+</div>
+<div class="align"> </div>
+<!--
+<div class="left-image-decor"></div>
 <div class="right-image-decor"></div>
 <div class="align"> </div>
-<!-- ***** Header Area End ***** -->
-<br><br><br><br><br><br><br>
 
-<br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br>
-
-
-<!-- ***** Footer Start ***** -->
 <footer id="contact-us">
   <div class="container">
     <div class="row">
@@ -75,7 +140,7 @@
     </div>
   </div>
 </footer>
-
+--> 
 <!-- jQuery --> 
 <script src="../js/jquery-2.1.0.min.js"></script> 
 
