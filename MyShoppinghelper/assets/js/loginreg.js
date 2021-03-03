@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // AJAX/Fetch Login
 
-        setFormMessage(LoginForm, "Fehler", "Ungültige Kombination E-Mail und Passwort");    
+        setFormMessage(LoginForm, "Fehler", "Ungueltige Kombination E-Mail und Passwort");    
     });
 
    document.querySelectorAll(".form__input").forEach(inputElement => {
