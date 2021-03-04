@@ -11,7 +11,7 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 18px;
-  
+}
 
 .container1{
     width: 400px;
@@ -44,7 +44,7 @@ body{
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: var(--color-primary);
     opacity: 1; /* Firefox */
-  }
+}
 
 .form__input{
     display: block;

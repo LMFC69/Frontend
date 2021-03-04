@@ -1,11 +1,11 @@
 function check(form){
 	// Hier checken wir dann eure Response und brauchen dann von euch ein True oder false
 	
-    if((){ //hier if (response == "true") dann weiterleitung zum Dashboard
+    if(123=123){ //hier if (response == "true") dann weiterleitung zum Dashboard
         window.open(href="main.html")    
         window.close(href="login.html")
     }else{ // else if (response == "false")
-       return type="error";   
+        return type="error";   
     }
 }
 
@@ -41,42 +41,40 @@ document.addEventListener("DOMContentLoaded", () => {
     
     document.querySelector("#linkCreateAccount").addEventListener("click", e => {
         e.preventDefault();
-       LoginForm.classList.add("form--hidden");
+        LoginForm.classList.add("form--hidden");
         CreateAccountForm.classList.remove("form--hidden");
     });
-         
+
     document.querySelector("#linkLogin").addEventListener("click", e => {
         e.preventDefault();
-       LoginForm.classList.remove("form--hidden");
+        LoginForm.classList.remove("form--hidden");
         CreateAccountForm.classList.add("form--hidden");
     });
 
     LoginForm.addEventListener("submit", e => { // hier würden wir euch eigentlich die Form übergeben wollen. Wie ihr das dann macht, ist jz bei euch
-         e.preventDefault();
+        e.preventDefault();
 
         // AJAX/Fetch Login
 
         setFormMessage(LoginForm, "Fehler", "Ungueltige Kombination E-Mail und Passwort");    
     });
-
-  
     
-       inputElement.addEventListener("input", e => {
-           clearInputError(inputElement);
-       })
-   });
+    inputElement.addEventListener("input", e => {
+        clearInputError(inputElement);
+    })
+});
 
-   document.querySelectorAll(".form__input").forEach(inputElement => {
+    document.querySelectorAll(".form__input").forEach(inputElement => {
         inputElement.addEventListener("blur", e => {
             if (e.target.id === "SignUpPasswort" && e.target.value.length > -1 && e.target.value.length < 8){
                 setInputError(inputElement, "Passwort muss mindestens 8 Zeichen lang sein");
             }
         });
- 
+
         inputElement.addEventListener("input", e => {
             clearInputError(inputElement);
         })
- 
+
     });
 
     document.querySelectorAll(".form__input").forEach(inputElement => {
@@ -89,6 +87,4 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });   
     });
-    
-});
 
