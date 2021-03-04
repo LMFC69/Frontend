@@ -904,6 +904,16 @@ promotion
   margin-top: -200px;
 }
 
+.left-image-decor2 {
+  background-image: url(../images/left-bg-decor.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 130%;
+  display: inline-block;
+  height: 130%;
+  margin-top: -200px;
+}
+
 #promotion {
   padding: 100px 0px;
 }
