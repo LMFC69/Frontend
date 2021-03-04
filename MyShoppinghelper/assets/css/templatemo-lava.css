@@ -899,7 +899,7 @@ promotion
   background-repeat: no-repeat;
   position: absolute;
   width: 100%;
-  display: inline-flex;
+  display: inline-block;
   height: 130%;
   margin-top: -200px;
 }
